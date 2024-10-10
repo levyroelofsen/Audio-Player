@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%; /* Make it responsive */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.file-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333;
+    width: 100%;
+}
+
+.play-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(78, 84, 200, 0.9);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.play-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.play-button:not(:disabled):hover {
+    background-color: rgba(143, 148, 251, 0.9);
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .play-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .file-input {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
