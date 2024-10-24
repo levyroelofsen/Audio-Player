@@ -60,6 +60,13 @@ h1 {
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
+.decibel-counter {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+
 /* Responsive Design */
 @media (max-width: 600px) {
     h1 {
