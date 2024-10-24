@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Upload and Play</title>
+    <title>Audio Upload and Play with Decibel Counter</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,6 +12,7 @@
         <input type="file" id="audioFile" accept="audio/*" class="file-input">
         <button id="playButton" class="play-button" disabled>Play Audio</button>
         <audio id="audioPlayer" controls style="display: none;"></audio>
+        <div id="decibelCounter" class="decibel-counter">Decibels: <span id="decibelValue">0</span> dB</div>
     </div>
     <script src="script.js"></script>
 </body>
