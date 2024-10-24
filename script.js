@@ -44,7 +44,12 @@ function startDecibelCounter(audioElement) {
 
         // Convert the average value to decibels (approximation)
         const decibels = 20 * Math.log10(average / 255);
-        decibelDisplay.textContent = decibels.toFixed(2);
+
+        // Adjust decibels based on the audio element's volume
+        const adjustedDecibels = decibels + 20 * Math.log10(audioElement.volume);
+
+        // Update the decibel display with the adjusted value
+        decibelDisplay.textContent = adjustedDecibels.toFixed(2);
 
         requestAnimationFrame(updateDecibels);
     }
