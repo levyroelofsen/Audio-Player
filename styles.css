@@ -64,8 +64,17 @@ h1 {
 .decibel-counter {
     margin-top: 20px;
     font-size: 1.5em;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.9); /* White text with a bit of transparency */
+    background-color: rgba(78, 84, 200, 0.2); /* Slightly transparent background matching the gradient */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow to make it stand out */
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 /* Responsive Design */
 @media (max-width: 600px) {
